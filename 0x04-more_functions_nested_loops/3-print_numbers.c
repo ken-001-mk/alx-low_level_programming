@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * print_numbers - a function that prints the numbers, from 0 to 9
- * Return: 0
+ * print_numbers - print the numbers from 0 to 9
+ * Description: You can only use _putchar twice
  */
 void print_numbers(void)
 {
-	int num;
+	int i;
 
-	for (num = 0; num <= 9; num++)
+	i = 0;
+	while (i < 10)
 	{
-		_putchar((num % 10) + '0');
+		_putchar(i + '0');
+		i++;
 	}
-
 	_putchar('\n');
-	return (0);
 }
