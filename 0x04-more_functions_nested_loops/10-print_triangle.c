@@ -24,6 +24,11 @@ void print_triangle(int size)
 			for (tr = 0; tr <= ro; tr++)
 			{
 				_putchar('#');
+
+				if (sp == size)
+					continue;
+
+				 _putchar('\n');
 			}
 			_putchar('\n');
 		}
