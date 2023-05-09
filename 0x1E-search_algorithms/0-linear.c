@@ -10,14 +10,18 @@
  * Return: return -1, if vlaue is not present in array or is NULL
  */
 
-int linear_search(int *array, size_t size, int value) {
+int linear_search(int *array, size_t size, int value)
+{
+   size_t i;
+
    if (array == NULL) {
-      return -1;
+      return (-1);
    }
    for (int i =0; i < size; i++) {
-      printf("Compares %d to %d\n", array[i], value);
+      printf("Compares checked value of array %d to %d\n", array[i], i);
       if (array[i] == value) {
-         return i;
+         return (i);
       }
    }
-   return -1;
+   return (-1);
+}
